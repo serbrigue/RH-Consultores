@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load bootstrap5 static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/empleados.css' %}">
+{% endblock %}
+
+{% block content %}
+<form class="form-inline" method="get">
+  <div class="form-group mx-sm-3 mb-2">
+    <label for="businessentityid" class="sr-only">Business Entity ID:</label>
+    <input type="text" class="form-control" id="businessentityid" name="businessentityid" placeholder="Business Entity ID">
+  </div>
+  <div class="form-group mx-sm-3 mb-2">
+    <label for="jobtitle" class="sr-only">Job Title:</label>
+    <input type="text" class="form-control" id="jobtitle" name="jobtitle" placeholder="Job Title">
+  </div>
+  <div class="form-group mx-sm-3 mb-2">
+    <label for="gender" class="sr-only">Gender:</label>
+    <input type="text" class="form-control" id="gender" name="gender" placeholder="Gender">
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">Search</button>
+</form>
+
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>businessentityid</th>
+        <th>Job Titlee</th>
+        <th>Gender</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for employee in employees %}
+        <tr>
+          <td>{{ employee.businessentityid.firstname }}</td>
+          <td>{{ employee.businessentityid.lastname }}</td>
+          <td>{{employee.businessentityid.businessentityid}}</td>
+          <td>{{ employee.jobtitle }}</td>
+          <td>{{ employee.gender }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

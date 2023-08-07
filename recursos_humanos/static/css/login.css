@@ -1,0 +1,30 @@
+/* Estilos personalizados para el formulario de inicio de sesión */
+
+body {
+    background-color: #f8f8f8; /* Fondo gris claro */
+  }
+  
+  .card {
+    background-color: #fff; /* Fondo blanco para la tarjeta del formulario */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-label {
+    font-weight: bold; /* Texto de etiquetas en negrita */
+  }
+  
+  .form-control {
+    border-color: #ccc; /* Color del borde de los campos de entrada */
+  }
+  
+  .btn-primary {
+    background-color: #000; /* Botón de fondo negro */
+    border-color: #000; /* Borde negro para el botón */
+  }
+  
+  .btn-primary:hover {
+    background-color: #333; /* Color del botón al pasar el mouse */
+    border-color: #333; /* Borde del botón al pasar el mouse */
+  }
+  

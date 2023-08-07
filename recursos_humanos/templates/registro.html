@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/registro.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card p-4">
+        <h2 class="mb-4">Registro de Usuario</h2>
+        <form method="post">
+          {% csrf_token %}
+
+          {% for field in form %}
+          <div class="form-group">
+            <label class="form-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
+            {{ field }}
+            {% if field.errors %}
+              <ul class="errorlist">
+                {% for error in field.errors %}
+                  <li>{{ error }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </div>
+          {% endfor %}
+
+          <input type="submit" value="Registrarse" class="btn btn-primary mt-3">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center mt-3">
+    <div class="col-md-6">
+      <a href="{% url 'login' %}" class="btn btn-secondary">Si tienes una cuenta, inicia sesión</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

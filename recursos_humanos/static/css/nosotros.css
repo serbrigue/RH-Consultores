@@ -1,0 +1,90 @@
+/* Reset de estilos y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .section-intro {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* Estilos de la sección del equipo */
+  .equipo {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+  }
+  
+  .equipo-member {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .equipo-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .cargo {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos de la sección de servicios y beneficios */
+  .servicios {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+  }
+  
+  .servicios-list li,
+  .beneficios-list li {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos de la sección de testimonios */
+  .testimonios {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+  }
+  
+  .testimonio {
+    margin-bottom: 40px;
+  }
+  
+  blockquote {
+    background-color: #fff;
+    padding: 20px;
+    border-left: 5px solid #333;
+  }
+  
+  blockquote p {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  blockquote footer {
+    font-weight: bold;
+  }
+  

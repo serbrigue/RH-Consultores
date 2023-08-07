@@ -1,0 +1,30 @@
+/* Estilos para el Footer Light */
+.footer {
+    margin-top: 30px;
+    background-color: #f8f9fa; /* Color de fondo claro */
+  }
+  
+  .footer p {
+    margin-bottom: 0;
+    color: #333; /* Color de texto oscuro */
+  }
+  
+  .footer h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Color de texto oscuro */
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+    color: #333; /* Color de enlaces oscuro */
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+    color: #000
+  }
+  

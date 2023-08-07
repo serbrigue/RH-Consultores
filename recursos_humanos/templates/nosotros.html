@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load bootstrap5 static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/nosotros.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="nosotros py-5">
+    <div class="container">
+      <h2 class="section-title text-center">Somos una consultora de recursos humanos que te ayuda a encontrar el talento que necesitas</h2>
+      <p class="section-intro text-center">En RH Consultores, creemos que las personas son el activo más valioso de cualquier organización. Por eso, ofrecemos soluciones integrales de gestión del talento humano, desde la selección y la formación hasta el desarrollo y la retención. Nuestro objetivo es conectar a las empresas con los profesionales más adecuados para cada puesto, potenciando su rendimiento y su satisfacción laboral.</p>
+    </div>
+</section>
+
+<section class="empresa-historia py-5">
+    <div class="container">
+      <h2 class="section-title">Nuestra Historia <i class="fas fa-history"></i></h2>
+      <p>
+        RH Consultores nació en 2010 como una pequeña agencia de reclutamiento, fundada por dos expertos en recursos humanos con más de 20 años de experiencia en el sector. Desde entonces, hemos crecido hasta convertirnos en una de las consultoras líderes en el mercado nacional, con más de 50 empleados y más de 500 clientes satisfechos. Hemos participado en proyectos de gran envergadura, como la incorporación de más de 1000 trabajadores para una multinacional tecnológica o la creación de un plan de carrera para una empresa familiar.
+      </p>
+    </div>
+</section>
+
+<!-- Sección del Equipo -->
+<section class="equipo py-5">
+    <div class="container">
+      <h2 class="section-title">Nuestro Equipo <i class="fas fa-users"></i></h2>
+  
+      <!-- Equipo - Miembro 1 -->
+      <div class="equipo-member">
+        <img src="{% static 'img/empleado1.png' %}" alt="Ana Pérez">
+        <h3>Ana Pérez</h3>
+        <p class="cargo">Directora general</p>
+        <p>Nuestra Directora general es la responsable de dirigir y coordinar todas las áreas de la empresa. Tiene una amplia trayectoria en el ámbito de los recursos humanos y es experta en liderazgo, comunicación y negociación.</p>
+      </div>
+  
+      <!-- Equipo - Miembro 2 -->
+      <div class="equipo-member">
+        <img src="{% static 'img/empleado2.png' %}" alt="Carlos García">
+        <h3>Carlos García</h3>
+        <p class="cargo">Jefe de proyectos</p>
+        <p>Nuestro Jefe de proyectos es el encargado de planificar, ejecutar y supervisar los proyectos que realizamos para nuestros clientes. Tiene una gran capacidad analítica, creativa y organizativa.</p>
+      </div>
+  
+      <!-- Equipo - Miembro 3 -->
+      <div class="equipo-member">
+        <img src="{% static 'img/empleado3.png' %}" alt="Laura Sánchez">
+        <h3>Laura Sánchez</h3>
+        <p class="cargo">Consultora senior</p>
+        <p>Nuestra Consultora senior es la especialista en selección y evaluación de candidatos. Tiene un excelente dominio de las técnicas y las herramientas más innovadoras en este campo.</p>
+      </div>
+  
+      <!-- Equipo - Miembro 4 -->
+      <div class="equipo-member">
+        <img src="{% static 'img/empleado4.png' %}" alt="Pedro López">
+        <h3>Pedro López</h3>
+        <p class="cargo">Consultor junior</p>
+        <p>Nuestro Consultor junior es el encargado de apoyar a los consultores senior en las diferentes fases del proceso de gestión del talento. Tiene un alto nivel de inglés, informática y redes sociales.</p>
+      </div>
+  
+    </div>
+  </section>
+  <!-- Sección de Servicios -->
+  <section class="servicios py-5">
+    <div class="container">
+      <h2 class="section-title">Nuestros Servicios <i class="fas fa-cogs"></i></h2>
+  
+      <ul class="servicios-list">
+        <li>
+          <h3>Selección</h3>
+          <p>Buscamos y encontramos al candidato ideal para cada puesto, utilizando metodologías ágiles y eficientes.</p>
+        </li>
+        <li>
+          <h3>Formación</h3>
+          <p>Diseñamos e impartimos cursos a medida para mejorar las competencias y las habilidades de los trabajadores.</p>
+        </li>
+        <li>
+          <h3>Desarrollo</h3>
+          <p>Elaboramos planes de carrera personalizados para fomentar el crecimiento profesional y el compromiso de los empleados.</p>
+        </li>
+        <li>
+          <h3>Retención</h3>
+          <p>Implementamos estrategias para reducir la rotación y aumentar la motivación y la lealtad de los trabajadores.</p>
+        </li>
+      </ul>
+  
+      <h2 class="section-title">Beneficios</h2>
+  
+      <ul class="beneficios-list">
+        <li>Ahorro de tiempo y dinero: Delega en nosotros la gestión del talento humano y dedícate a lo que mejor sabes hacer.</li>
+        <li>Calidad y garantía: Contamos con un equipo experimentado y certificado que te asegura resultados óptimos y satisfactorios.</li>
+        <li>Flexibilidad y adaptabilidad: Nos ajustamos a tus necesidades específicas y te ofrecemos soluciones personalizadas y asequibles.</li>
+      </ul>
+    </div>
+  </section>
+  
+<!-- Sección de Testimonios -->
+<section class="testimonios py-5">
+    <div class="container">
+      <h2 class="section-title">Testimonios de Clientes <i class="fas fa-comment-alt"></i></h2>
+  
+      <!-- Testimonio 1 -->
+      <div class="testimonio">
+        <blockquote>
+          <p>Gracias a RH Consultores hemos podido cubrir una vacante crítica en nuestra empresa en tiempo récord. Nos han facilitado un proceso de selección rápido, eficaz y transparente. Estamos muy contentos con el candidato que nos han proporcionado”.</p>
+          <footer>María González, gerente de una empresa de marketing</footer>
+        </blockquote>
+      </div>
+  
+      <!-- Testimonio 2 -->
+      <div class="testimonio">
+        <blockquote>
+          <p>RH Consultores nos ha ayudado a mejorar el clima laboral y la productividad de nuestro equipo. Nos han impartido una formación muy práctica y dinámica, que ha mejorado las habilidades de comunicación, trabajo en equipo y resolución de conflictos de nuestros empleados”.</p>
+          <footer>José Martínez, director de una empresa de turismo</footer>
+        </blockquote>
+      </div>
+  
+      <!-- Testimonio 3 -->
+      <div class="testimonio">
+        <blockquote>
+          <p>RH Consultores nos ha acompañado en el desarrollo de nuestro plan de carrera. Nos han asesorado y orientado en cada paso, desde la definición de los objetivos hasta la evaluación del desempeño. Hemos notado un aumento de la confianza, la motivación y el compromiso de nuestros trabajadores”.</p>
+          <footer>Luis Rodríguez, responsable de una empresa de ingeniería</footer>
+        </blockquote>
+      </div>
+  
+    </div>
+  </section>
+  
+{% endblock %}
